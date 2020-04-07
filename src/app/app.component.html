@@ -1,0 +1,19 @@
+<div >
+  <span class="font" style="width:40%;float:left;">
+  <b>weather</b><br>
+  <b>master</b>
+  </span>
+
+  <span class="font"  style="Text-align:center;Width:20%;float:left">
+    <b>{{WeatherAppService.title}}</b> 
+    </span>
+
+
+  <div  style="Text-align:right;Width:40%;float:right">
+    <button [hidden]="!WeatherAppService.settingFlag" (click)="rout()">setting</button></div>
+</div>
+<br>
+<br>
+<br>
+
+<router-outlet> </router-outlet>

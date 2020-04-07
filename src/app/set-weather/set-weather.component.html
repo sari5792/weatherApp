@@ -1,0 +1,32 @@
+<button (click)="goBack()">back</button>
+
+<div class="b">
+
+  <br>
+
+  <select  #selectElem  (change)='onOptionsSelected($event.target.value)' >
+
+    <option  [selected]="city.cityId == myCity.cityId"  *ngFor="let city of myCities"  [ngValue]="city.cityId" >
+      {{city.cityName}}
+    </option>
+
+  </select>
+  <br>
+
+  <select class="unit" [(ngModel)]="myUnit">
+
+    <option *ngFor="let u  of myUnits" [ngValue]="u">
+      {{u}}
+    </option>
+
+  </select>
+ 
+  <br>
+  <br>
+
+  <button (click)="save()">save</button>
+
+</div>
+
+
+
